@@ -1,0 +1,59 @@
+<!DOCTYPE HTML> 
+<html> 
+<body>
+<head>
+<style>
+      #drg 
+      {
+      width:500px;
+      height:400px;
+      border:2px solid blue;
+      }
+      #shelf
+      {
+        margin-top:-10px;
+      }
+      #rug
+      {
+        margin-top:-120px;
+      }
+    </style>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.10.3.custom.min.js"></script>
+</head>
+<!-- inline SVG -->
+<svg width="300" height="80" xmlns="http://www.w3.org/2000/svg">
+<line x1="0" y1="0" x2="0" y2="80" stroke="#000000" stroke-width="50"/>
+<line x1="40" y1="20" x2="40" y2="80" stroke="#5F04B4" stroke-width="30"/>
+<line x1="60" y1="10" x2="60" y2="80" stroke="#00FF00" stroke-width="20"/>
+<line x1="70" y1="15" x2="99" y2="76" stroke="#01DFD7" stroke-width="10"/>
+<line x1="103" y1="70" x2="165" y2="70" stroke="#01DFD7" stroke-width="30"/>
+</svg>
+<div id="shelf">
+<svg width="400" height="10" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="10" fill="#CC9966" stroke="#000"/>
+</svg>
+</div>
+<div id="drg">
+<svg width="400" height="350" xmlns="http://www.w3.org/2000/svg" id="rug">
+<line x1="100" y1="150" x2="60" y2="350" stroke="#CC9966" stroke-width="5" />
+<line x1="160" y1="150" x2="180" y2="350" stroke="#CC9966" stroke-width="5" />
+<line x1="95" y1="170" x2="160" y2="170" stroke="#CC9966" stroke-width="5" />
+<line x1="90" y1="200" x2="165" y2="210" stroke="#CC9966" stroke-width="5" />
+<line x1="83" y1="240" x2="170" y2="240" stroke="#CC9966" stroke-width="5" />
+<line x1="75" y1="280" x2="174" y2="270" stroke="#CC9966" stroke-width="5" />
+<line x1="67" y1="320" x2="180" y2="320" stroke="#CC9966" stroke-width="5" />
+</svg>
+</div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+  // sets draggable the elements with id="im"
+    $('#rug').draggable({
+    cursor: 'move',        // sets the cursor apperance
+    containment: '#drg'    // sets to can be dragged only within "#drg" element
+  });
+    });
+  </script>
+
+</body> 
+</html>

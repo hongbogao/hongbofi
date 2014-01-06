@@ -1,0 +1,34 @@
+
+@media all and (max-width: 600px) {
+    #mainpage{
+        display:none;
+    }
+}
+
+body {
+padding: 50px;
+background-color: #bdbdbd;
+}
+
+#name, #intro,#cando,#contact {
+text-align: center;
+}
+
+#name,#intro{
+font-family: 'Chango', cursive;
+}
+
+#intro{
+font-size: 1.5em;
+margin-top: 50px;
+}
+
+#name{
+color: #CC9999;
+font-size: 2em;
+}
+
+#para, #cando, #contact{
+font-family: 'Rufina', serif;
+letter-spacing:1px;
+}
