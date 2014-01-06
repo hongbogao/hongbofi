@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hongbo's Portfolio</title>
+        <meta name="description" content="about me amd my work">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/mobile.css" type="text/css" media="screen and (max-device-width: 480px)" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Snowburst+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.10.3.custom.min.js"></script>
+    </head>
+    <body>
+        <div id="mainpage">
+            <div id="wall">
+                <canvas id="myCanvas"></canvas>
+                <svg width="300" height="80" xmlns="http://www.w3.org/2000/svg" id="books">
+                <line x1="0" y1="0" x2="0" y2="80" stroke="#000000" stroke-width="50"/>
+                <line x1="40" y1="20" x2="40" y2="80" stroke="#FFFFFF" stroke-width="30"/>
+                <line x1="60" y1="10" x2="60" y2="80" stroke="#BDBDBD" stroke-width="20"/>
+                <line x1="73" y1="15" x2="100" y2="79" stroke="#E6E6E6" stroke-width="10"/>
+                <line x1="103" y1="70" x2="165" y2="70" stroke="#BDBDBD" stroke-width="30"/>
+                </svg>
+                <svg width="400" height="10" xmlns="http://www.w3.org/2000/svg" id="shelf" filter="url(#f1)">
+                <rect width="200" height="10" fill="#CC9966" stroke="#000"/>
+                </svg>
+                <div id="paint">
+                    <a href="#intro">
+                        <svg width="130" height="135" xmlns="http://www.w3.org/2000/svg" style="display:block; margin:auto; vertical-align: middle; ">
+                        <defs>
+                        <filter id="f1" x="0" y="0" width="150%" height="150%">
+                        <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="6" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                        </filter>
+                        </defs>
+                        <rect width="80" height="85" fill="#CC9966" filter="url(#f1)"></rect>
+                        <line x1="0" y1="3" x2="80" y2="3" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="3" y1="0" x2="3" y2="83" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="" y1="80" x2="80" y2="80" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="77" y1="0" x2="77" y2="83" stroke="#61380B" stroke-width="3"></line>
+                        <text x="15 " y="50" dx="-10"> about me</text>
+                        </svg>
+                    </a>
+                    <a href="#intro">
+                        <svg width="180" height="100" xmlns="http://www.w3.org/2000/svg" style="display:block; margin-left:130px;"> 
+                        <rect width="120" height="50" fill="#BDBDBD" filter="url(#f1)"></rect>
+                        <line x1="0" y1="5" x2="120" y2="5" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="5" y1="0" x2="5" y2="55" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="" y1="50" x2="120" y2="50" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="115" y1="0" x2="115" y2="55" stroke="#61380B" stroke-width="3"></line>
+                        <text x="20 " y="35" dx="-10">what I can do</text>
+                        </svg>
+                    </a>
+                    <a href="#intro">
+                        <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg" style="display:block; margin-left:100px;"> 
+                        <rect width="70" height="90" fill="#58D3F7" filter="url(#f1)"></rect>
+                        <line x1="0" y1="3" x2="69" y2="3" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="3" y1="0" x2="3" y2="90" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="0" y1="87" x2="69" y2="87" stroke="#61380B" stroke-width="3"></line>
+                        <line x1="66" y1="0" x2="66" y2="90" stroke="#61380B" stroke-width="3"></line>
+                        <text x="15" y="50" dx="-10">contact</text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="floor">
+                <div id="drg">
+                    <svg width="200" height="350" xmlns="http://www.w3.org/2000/svg" id="rug">
+                    <line x1="100" y1="150" x2="60" y2="350" stroke="#61380B" stroke-width="5" />
+                    <line x1="160" y1="150" x2="180" y2="350" stroke="#61380B" stroke-width="5" />
+                    <line x1="95" y1="170" x2="160" y2="170" stroke="#61380B" stroke-width="5" />
+                    <line x1="90" y1="200" x2="165" y2="210" stroke="#61380B" stroke-width="5" />
+                    <line x1="83" y1="240" x2="170" y2="240" stroke="#61380B" stroke-width="5" />
+                    <line x1="75" y1="280" x2="174" y2="270" stroke="#61380B" stroke-width="5" />
+                    <line x1="67" y1="320" x2="180" y2="320" stroke="#61380B" stroke-width="5" />
+                    </svg>
+                </div>
+                <div class="sofa"></div>
+                <div class="catsit"><img src="img/catsit.png" alt="sittingcat" width="61" height="70"></div>
+                <div class="catrun"><img src="img/catrun.png" width="78" height="70"></div>
+                <div class="catsleep"><img src="img/catsleep.png" width="75" height="69"></div>
+            </div>
+        </div>
+        <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+            <div class="wrapper">
+                <div id="name">Hongbo's</div>
+                <div id="intro">About me</div>
+                <div id="para">
+                    <p>My name is Hongbo Gao and I am a Chinese living in Finland since 2004. I studied Bachelor of Technology (Computer Science) in University in China and Master of Technology (Telecommunications) in Aalto University. Nowadays I focus on product and web development.I had worked in LUXUS for five years. Now my the other job is mom. </p>
+                    <p>I have passion in web UI design and development. This field is growing very rapidly. A small part of work may require a lot of effort, that keep bringing a lot of new interesting things to me.</p>
+                </div>
+                <div id="intro">What I can do</div>
+                <div id="cando">
+                    <p>Web Design / Development</p>
+                    <p>User Interface Testing / Web Site Quality Assurance</p>
+                    <p>User Interface Design</p>
+                    <p>Web Site Maintenance</p>
+                    <p>Web Content Management / Editing </p>
+                </div>
+                <div id="intro">Contact</div>
+                <div id="contact">
+                    <div class="email">email : gao.has.hongbo@gmail.com</div>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]-->
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+       <script>
+        var red = [50, 80, 63];
+        var orange = [40, 100, 60];
+        var green = [75, 100, 40];
+        var blue = [196, 77, 55];
+        var purple = [20, 50, 60];
+        var myName = "Hongbo's";
+        var myNameLength = (myName.length);
+        var letterColors = [red, orange, green, purple, blue];
+        bubbleShape = "square";
+        drawName(myName, letterColors);
+        bounceBubbles();</script>
+         <script type="text/javascript">
+        $(document).ready(function() {
+        // sets draggable the elements with id="im"
+        $('#rug').draggable({
+        cursor: 'move',        // sets the cursor apperance
+        containment: '#drg'    // sets to can be dragged only within "#drg" element
+        });
+        });
+        </script>
+    </body>
+</html>
