@@ -1,5 +1,5 @@
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 480px) {
     #mainpage{
         display:none;
     }
@@ -8,6 +8,7 @@
 body {
 padding: 50px;
 background-color: #bdbdbd;
+font-weight: bold;
 }
 
 #name, #intro,#cando,#contact {
@@ -30,5 +31,5 @@ font-size: 2em;
 
 #para, #cando, #contact{
 font-family: 'Rufina', serif;
-letter-spacing:1px;
+letter-spacing:0.5px;
 }
