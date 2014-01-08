@@ -4,6 +4,9 @@
         display:none;
         height: 0px; 
     }
+    #wrapper{
+        background-color: #bdbdbd;
+    }
 }
 
 body {
