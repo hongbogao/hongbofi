@@ -398,6 +398,7 @@ img:hover{-webkit-transform:rotate(-30deg);-moz-transform:rotate(-30deg);-o-tran
 .wrapper{
     margin:0 auto;
     position:relative;
+    width: 100%;
     
 }
 
