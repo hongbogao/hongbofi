@@ -449,7 +449,7 @@ img:hover{-webkit-transform:rotate(-30deg);-moz-transform:rotate(-30deg);-o-tran
 
 a:link {text-decoration:none;}
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     #name{
         display:none;
     }

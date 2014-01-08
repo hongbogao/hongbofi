@@ -2,6 +2,7 @@
 @media all and (max-width: 480px) {
     #mainpage{
         display:none;
+        height: 0px; 
     }
 }
 
